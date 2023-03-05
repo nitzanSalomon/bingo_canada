@@ -13,19 +13,19 @@ let data = [
     "מאכל אהוב",
     "חייה אהובה",
     "ספורט אהוב",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
+    "צבע עיניים",
+    "צבע גרביים",
+    // "",
+    // "",
+    // "",
+    // "",
+    // "",
+    // "",
+    // "",
+    // "",
+    // "",
+    // "",
+    // "",
   ];
   
   const SEASONS = 10;
@@ -88,13 +88,13 @@ let data = [
   
     //  for stopping the confetti 
     const stop = () => {
-        setTimeout(function() {
-            confetti.stop()
-            document.querySelector(".darkScreen").classList.remove("hidden");
-            document.querySelector(".restartButton").addEventListener("click", () => {
-              window.location.reload();
-            });
-        }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        // setTimeout(function() {
+        //     confetti.stop()
+        //     document.querySelector(".darkScreen").classList.remove("hidden");
+        //     document.querySelector(".restartButton").addEventListener("click", () => {
+        //       window.location.reload();
+        //     });
+        // }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
     };
     // after this here we are calling both the function so it works
     start();
