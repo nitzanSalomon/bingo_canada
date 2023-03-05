@@ -1,0 +1,159 @@
+@font-face {
+  font-family: TradeGothicLT;
+  src: url("./assets/fonts/TradeGothic/TradeGothic.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: almoni;
+  src: url("./assets/fonts/almoni/almoni-tzar-aaa-regular.otf");
+  font-weight: 500;
+}
+
+:root {
+  --realyDarkPurple: #C42435;
+  --darkPurple: #C42435;
+  --lightPurple: #d35d69;
+  --yellow: #e3c12d;
+}
+
+.bodyContrainer {
+  direction: ltr;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(var(--lightPurple), var(--darkPurple));
+}
+
+.randomEpisodeButton {
+  width: 8vw;
+  position: absolute;
+  top: 2vh;
+  right: 3vw;
+  background-color: var(--realyDarkPurple);
+  padding: 0.5em;
+  border-radius: 50%;
+}
+
+.bingoContainer {
+  background-color: var(--realyDarkPurple);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 95vw;
+  /* height: fit-content; */
+  /* max-height: 70vh; */
+  /* min-height: 50vh; */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30vh;
+  padding: 0.2em;
+}
+
+.bingoSqure {
+    background-color: white;
+    margin: 0.1em;
+    font-family: almoni;
+    font-size: 1.15rem;
+    min-height: 19vw;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+  color: white;
+  /* display: flex; */
+  font-size: 4em;
+  font-family: almoni;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 3vh;
+  text-align: center;
+  /* font-weight: bold; */
+}
+
+.title div {
+  font-size: 1.3rem;
+  width: 90vw;
+}
+
+.randomEpisodeContainer {
+  color: white;
+  font-family: almoni;
+  position: absolute;
+  font-size: 1.2em;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 4vh;
+  width: 70%;
+  text-align: center;
+}
+
+.darkScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.restartButton {
+  width: 17.5vw;
+  height: 10vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--realyDarkPurple);
+  border: 0.4em solid var(--lightPurple);
+  padding: 0.5em;
+  border-radius: 50%;
+}
+
+.restartButtonPic {
+  width: 11vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none;
+}
+
+.titleWin {
+  top: 20vh;
+  font-size: 4em;
+}
+/* confetti */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 4rem;
+  text-shadow: 0 0 10px;
+}
+
+#logo {
+    width: 50vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80vh;
+}
