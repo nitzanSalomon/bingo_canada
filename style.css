@@ -59,7 +59,7 @@
     margin: 0.1em;
     font-family: almoni;
     font-size: 1.15rem;
-    min-height: 19vw;
+    min-height: 20vw;
     display: flex;
     align-content: center;
     align-items: center;
@@ -155,5 +155,5 @@ p {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 4vh;
+    bottom: 6vh;
 }
