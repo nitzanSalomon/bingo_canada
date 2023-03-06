@@ -155,7 +155,7 @@ p {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0vh;
+  bottom: 3vh;
   margin: 0;
   box-sizing: border-box;
   z-index: 2;
