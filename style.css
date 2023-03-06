@@ -158,4 +158,5 @@ p {
   bottom: 0vh;
   margin: 0;
   box-sizing: border-box;
+  z-index: 2;
 }
