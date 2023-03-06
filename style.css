@@ -155,5 +155,5 @@ p {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 6vh;
+    top: 80vh;
 }
