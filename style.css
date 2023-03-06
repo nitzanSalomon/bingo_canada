@@ -11,7 +11,7 @@
 }
 
 :root {
-  --realyDarkPurple: #a71b2a;
+  --realyDarkPurple: #c42435;
   --darkPurple: #c42435;
   --lightPurple: #d35d69;
   --yellow: #e3c12d;
@@ -151,9 +151,11 @@ p {
 }
 
 #logo {
-  width: 45vw;
+  height: 14vh;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 77vh;
+  bottom: 0vh;
+  margin: 0;
+  box-sizing: border-box;
 }
