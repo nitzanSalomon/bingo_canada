@@ -39,6 +39,8 @@ let isBingo = [
   [false, false, false, false],
 ];
 
+let currBingoSqure;
+
 /* loading function
   --------------------------------------------------------------
   Description: */
@@ -72,10 +74,21 @@ const createBingoBord = () => {
 };
 
 const clickBingoSqure = (event) => {
+  currBingoSqure = event.currentTarget;
   event.currentTarget.style.backgroundColor = "var(--lightPurple)";
   let placement = event.currentTarget.id;
   isBingo[placement.slice(0, 1)][placement.slice(1)] = true;
-  checkForBingo();
+  document.querySelector(`#nameInput`).value = "";
+  document.querySelector(`#name_popup`).classList.remove("hidden");
+  document.querySelector(`#popupTitle`).innerText = `עם מי יש לכם ${event.currentTarget.innerText} במשותף?`;
+  document.querySelector(`#closePopup`).addEventListener("click", closePopUp, {once: true});
+};
+
+const closePopUp = () => {
+    document.querySelector(`#name_popup`).classList.add("hidden");
+    let name = El("div", {cls: "nameInSqure"},document.querySelector(`#nameInput`).value);
+    currBingoSqure.append(name);
+    checkForBingo();
 };
 
 const checkForBingo = () => {
