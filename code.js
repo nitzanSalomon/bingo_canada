@@ -75,9 +75,6 @@ const createBingoBord = () => {
 
 const clickBingoSqure = (event) => {
   currBingoSqure = event.currentTarget;
-  event.currentTarget.style.backgroundColor = "var(--lightPurple)";
-  let placement = event.currentTarget.id;
-  isBingo[placement.slice(0, 1)][placement.slice(1)] = true;
   document.querySelector(`#nameInput`).value = "";
   document.querySelector(`#name_popup`).classList.remove("hidden");
   document.querySelector(`#popupTitle`).innerText = `עם מי יש לכם ${event.currentTarget.innerText} במשותף?`;
@@ -85,10 +82,16 @@ const clickBingoSqure = (event) => {
 };
 
 const closePopUp = () => {
+    if(document.querySelector(`#nameInput`).value != "") {
+        currBingoSqure.removeEventListener("click", clickBingoSqure);
+        currBingoSqure.style.backgroundColor = "var(--lightPurple)";
+        let placement = currBingoSqure.id;
+        isBingo[placement.slice(0, 1)][placement.slice(1)] = true;
+        let name = El("div", {cls: "nameInSqure"},document.querySelector(`#nameInput`).value);
+        currBingoSqure.append(name);
+        checkForBingo();
+    }
     document.querySelector(`#name_popup`).classList.add("hidden");
-    let name = El("div", {cls: "nameInSqure"},document.querySelector(`#nameInput`).value);
-    currBingoSqure.append(name);
-    checkForBingo();
 };
 
 const checkForBingo = () => {
