@@ -150,11 +150,11 @@ p {
 }
 
 #logo {
-  height: 14vh;
+  height: 12vh;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 3vh;
+  bottom: 2vh;
   margin: 0;
   box-sizing: border-box;
   z-index: 2;
