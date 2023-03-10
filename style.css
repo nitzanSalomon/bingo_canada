@@ -39,26 +39,19 @@
 }
 
 .bingoContainer {
-  background-color: var(--realyDarkPurple);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  width: 95vw;
-  /* height: fit-content; */
-  /* max-height: 70vh; */
-  /* min-height: 50vh; */
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 30vh;
-  padding: 0.2em;
+    background-color: var(--realyDarkPurple);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 95vw;
+    padding: 0.2em;
 }
 
 .bingoSqure {
   background-color: white;
   margin: 0.1em;
   font-family: almoni;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   min-height: 20vw;
   display: flex;
   align-content: center;
@@ -69,16 +62,10 @@
 }
 
 .title {
-  color: white;
-  /* display: flex; */
-  font-size: 4em;
-  font-family: almoni;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 3vh;
-  text-align: center;
-  /* font-weight: bold; */
+    color: white;
+    font-size: 4em;
+    font-family: almoni;
+    text-align: center;
 }
 
 .title div {
@@ -150,14 +137,9 @@ p {
 }
 
 #logo {
-  height: 12vh;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 2vh;
-  margin: 0;
-  box-sizing: border-box;
-  z-index: 2;
+    height: 12vh;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 #name_popup {
@@ -198,10 +180,20 @@ p {
     height: 4vh;
     border: white;
     border-radius: 0.2rem;
+    padding: 0.2rem 0.6rem;
 }
 
 .nameInSqure {
     color: #660c15;
+}
+
+#mainPage {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
 }
 
 .hidden {
